@@ -180,7 +180,7 @@ static bool prepare_to_draw_into_mask(const SkRect& bounds, SkMask* mask) {
     const size_t size = mask->computeImageSize();
     if (size == 0) {
         return false;
-    }    
+    }        
     mask->fImage = SkMask::AllocImage(size, SkMask::kZeroInit_Alloc);
     if (nullptr == mask->fImage) {
         return false;
